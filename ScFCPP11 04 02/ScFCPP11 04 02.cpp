@@ -21,7 +21,7 @@ void sortMerge(int* arr, int first, int size) {
 		// if the values on the right side are over, fill in the rest from the left side
 			else if (right - firstInTheRightHalf >= size - size / 2)
 				temp[i] = arr[left++];
-		// if there are value on both sides, choose the smallest one of the remaining 
+		// if there are values on both sides, choose the smallest one of the remaining 
 			else
 				temp[i] = arr[left] < arr[right] ? arr[left++] : arr[right++];
 		// fill current range with sorted values
